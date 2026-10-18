@@ -1,4 +1,4 @@
-import { TipoServicio, Sistema, Alcance, Urgencia, Prioridad } from '../types/form';
+import { TipoServicio, Sistema, Alcance, Urgencia, Prioridad } from '../types/form.ts';
 export const reglasPuntuacion = {
   tipoServicio: { presupuesto: 1, ayuda_configuracion: 2, mantenimiento_programado: 3, averia_domicilio: 4, urgencia_negocio: 5 } as Record<TipoServicio, number>,
   sistema: { solar: 1, aerotermia: 2, aacc: 3, vrv: 4, caldera: 5 } as Record<Sistema, number>,

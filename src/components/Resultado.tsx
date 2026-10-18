@@ -1,5 +1,5 @@
 import React from 'react';
-import { Prioridad, RespuestasFormulario } from '../types/form';
+import { Prioridad, RespuestasFormulario } from '../types/form.ts';
 interface Props { puntuacion: number; prioridad: Prioridad; respuestas: RespuestasFormulario; codigo: string; }
 export const Resultado: React.FC<Props> = ({ puntuacion, prioridad, respuestas, codigo }) => {
   const color = prioridad === 'ALTA' ? 'bg-priority-high' : prioridad === 'MEDIA' ? 'bg-priority-medium' : 'bg-priority-low';

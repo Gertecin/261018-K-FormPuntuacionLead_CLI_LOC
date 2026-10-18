@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { ProgressBar } from './ProgressBar';
 import { cualificarLead } from '../rules/puntuacion';
-import { RespuestasFormulario, Prioridad } from '../types/form';
+import { RespuestasFormulario, Prioridad } from '../types/form.ts';
 interface Props { onCompletar: (r: { puntuacion: number; prioridad: Prioridad; respuestas: RespuestasFormulario; codigo: string }) => void; }
 export const Formulario: React.FC<Props> = ({ onCompletar }) => {
   const [paso, setPaso] = useState(1);

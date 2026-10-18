@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Formulario } from './components/Formulario';
 import { Resultado } from './components/Resultado';
-import { Prioridad, RespuestasFormulario } from './types/form';
+import { Prioridad, RespuestasFormulario } from './types/form.ts';
 interface R { puntuacion: number; prioridad: Prioridad; respuestas: RespuestasFormulario; codigo: string; }
 function App() {
   const [res, setRes] = useState<R | null>(null);

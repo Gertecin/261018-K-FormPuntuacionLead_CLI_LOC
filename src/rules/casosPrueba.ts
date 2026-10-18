@@ -1,5 +1,5 @@
 import { cualificarLead } from './puntuacion';
-import { TipoServicio, Sistema, Alcance, Urgencia, Prioridad } from '../types/form';
+import { TipoServicio, Sistema, Alcance, Urgencia, Prioridad } from '../types/form.ts';
 export interface CasoPrueba { id: number; ts: TipoServicio; s: Sistema; a: Alcance; u: Urgencia; expP: Prioridad; expN: number; }
 export const casosPrueba: CasoPrueba[] = [
   { id: 1, ts: 'urgencia_negocio', s: 'caldera', a: 'edificio', u: '48h_o_busco_otra', expP: 'ALTA', expN: 20 },
